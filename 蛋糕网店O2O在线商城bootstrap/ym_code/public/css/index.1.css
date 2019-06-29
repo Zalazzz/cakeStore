@@ -1,0 +1,169 @@
+
+/* 第一层 */
+.brand{
+  background-color:#f2f6f7;
+  display: flex;
+  justify-content: space-between;
+}
+.brand>.brand-message{
+  margin-left: 5%;
+  padding-top: 3%;
+}
+
+.brand h4{
+  font:4rem "Marvel-Regular";
+  color:#5D4B33;
+}
+
+.brand span{
+  color:#f07818;
+}
+
+.brand p{
+  margin-bottom:2rem;
+  font: "Roboto-Regular";
+  color: #f07818;
+}
+
+.brand a{
+  border:.4rem solid #5D4B33;
+  padding:.4rem;
+  font:1.2rem "Roboto-Regular";
+  color:#5D4B33;
+  text-decoration: none;
+}
+
+.brand a:hover{
+  color: #f07818;
+  border:.4rem solid #f07818;
+  transition:all .9s linear;
+}
+.brand>.brand-img{
+
+  margin-right: 10%;
+}
+
+/* 第二层 */
+/* 左边 */
+.second:first-child div{
+  height: 450px;
+}
+
+.second:first-child>div>div .F2-img{
+  height: 360px;
+  border: 1px solid #eee;
+}
+
+.second:first-child>div>div .F2-img>a>img{
+  width: 100%;
+  height: 100%;
+}
+
+.message p{
+  font:bolder .8rem "Roboto-Regular" ;
+  color: #000000;
+  margin-top:1rem;
+  margin-bottom: .2rem;
+}
+
+.message span:last-child{
+  float: right;
+  font: 1rem "Roboto-Regular";
+  color: #999999;
+}
+
+/* 第三层 */
+.thrid:first-child>div>div,
+.thrid:nth-child(2)>div>div,
+.thrid:nth-child(3)>div>div,
+.thrid:nth-child(4)>div>div,
+{
+  height: 330px;
+}
+.thrid img{
+  width: 100%;
+  height:100%;
+  border: 1px solid #eee;
+}
+
+.thrid .message p{
+  font:bolder .7rem "Roboto-Regular" ;
+  color: #000000;
+  margin-top:1rem;
+  margin-bottom: .2rem;
+}
+
+.thrid .message span:not(:last-child){
+  font-size:0.7rem !important;
+}
+
+.thrid .message span:last-child{
+  float: right;
+  margin-bottom: 1.3rem;
+  font: 1rem "Roboto-Regular";
+  color: #999999;
+}
+
+/* 第四层 */
+.bottom{
+  height: 300px;
+  background: url("../images/index/slid.jpg") no-repeat fixed;
+  background-size: cover;
+
+}
+
+.bottom::before{
+  display: table;
+  content: "";
+}
+
+.bottom>.container{
+  margin-top: 10%;
+}
+
+.row {
+  justify-content: center;
+}
+
+
+.bottom p{
+  text-align: center;
+  font: bolder 2rem "Marvel-Regular";
+  color: #fff;
+}
+
+
+.bottom input:first-child{
+  width: 40%;
+  padding: .4rem;
+  border: transparent;
+  color: #fff;
+  background-color:rgba(251,250,250,.2);
+}
+
+.bottom input:last-child{
+  width: 15%;
+  padding:.4rem;
+  border: 1px solid #f07818;
+  background-color:#f07818;
+  font-size:.9rem;
+  text-align: center;
+  color: #fff;
+}
+
+.bottom input:last-child:hover{
+  background-color:rgba(251,250,250,.2);
+  border:1px slid #f07818;
+  transition: 1s;
+  color: #f07818;
+}
+
+
+
+
+
+
+
+
+
+

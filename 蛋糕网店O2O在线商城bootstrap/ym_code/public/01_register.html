@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+	<title>Register</title>
+	<!-- 设置视口 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0,user-scalable=0">
+	<!-- 导入css文件 -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<!-- 导入js文件 -->
+	<link rel="stylesheet" href="../js/jquery.min.js">
+	<link rel="stylesheet" href="../js/popper.min.js">
+	<link rel="stylesheet" href="../js/bootstrap.min.js">
+	<!-- 导入自定义样式 -->
+	<link rel="stylesheet" href="css/00_common.css">
+	<link rel="stylesheet" href="css/01_register.css">
+ </head>
+ <body>
+	 <iframe src="header.html" frameborder="0" scrolling="no"></iframe>
+	 <div class="container-fluid">
+		 <div class="register">
+			<div class="register-top-grid">
+				<div>
+					<h3>Personal information</h3>	
+				</div>
+				<div>
+					<p>FIRST NAME*</p>
+					<input type="text" id="firstName">
+				</div>
+				<div>
+						<p>LAST NAME*</p>
+						<input type="text" id="lastName">
+					</div>
+					<div>
+							<p>EMAIL ADDRESS*</p>
+							<input type="text" id="email">
+						</div>
+					<div>
+							<input type="checkbox" name="checkbox" id="news" checked>
+							<span>SIGN UP FOR NEWSLETTERS</span>
+						</div>		
+			</div>
+			<div class="register-bottom-grid">
+				<div>
+					<h3>Login information</h3>
+				</div>
+				<div>
+						<p>PASSWORD*</p>
+						<input type="password" id="upwd">
+					</div>
+					<div>
+							<p>CONFIRM PASSWORD*</p>
+							<input type="password" id="cpwd">
+					</div>
+					<div>
+						<button class="btn btn-light" onclick="login()">submit</button>							
+					</div>
+
+			</div>
+		</div>
+</div>
+	<iframe src="footer.html" frameborder="0" scrolling="no"></iframe>
+<script>
+	function login(){
+		//获取用户信息
+		var $firstName=firstName.value;
+		var $lastName=lastName.value;
+		var $email=email.value;
+		var $news=news.value;
+		var $upwd=upwd.value;
+		var $cpwd=cpwd.value;
+		//判断两次密码输入是否一致
+		if($upwd!=$cpwd){
+			return;
+		}
+		//创建异步对象
+		var xhr=new XMLHttpRequest();
+			//测试是否监听到对象
+			console.log(xhr);
+		//监听事件
+		xhr.onreadystatechange=function(){
+			if (xhr.readyState==4 && xhr.status==200)
+			{
+				//处理响应消息
+				var result=xhr.responseText;
+				if (result==1)
+				{
+					alert("注册成功");
+				}else{alert("注册失败");}
+			}
+		}
+		//打开连接
+		xhr.open("post","/ym_user/v1/register",true);
+		//设置请求头信息
+		xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		//创建请求主体
+		var formdata="firstName="+$firstName+"&lastName="+$lastName+"&email="+$email+"&news="+$news+"&upws="+$upwd;
+		//发送请求
+		xhr.send(formdata);
+	}
+</script>
+ </body>
+</html>

@@ -1,0 +1,79 @@
+@media screen and (min-width:576px){
+  .message>h2{
+    font: 63px "Marvel-Regular";
+    color: #5D4B33;
+    margin-bottom: 1rem;
+  }
+  .message>h2 span{
+    color: #F07818;
+  }
+  .message p{
+    font:15.4px "Roboto-Regular";
+    color: #F07818;
+  }
+  .message a{
+    border: #5D4B33 5px solid;
+    font: 800 16.8px "Roboto-Regular" ;
+    color: #5D4B33;
+  }
+}
+@media screen and (min-width:768px){
+  .message>h2{
+    font: 84px "Marvel-Regular";
+    color: #5D4B33;
+    margin-bottom: 1rem;
+  }
+  .message>h2 span{
+    color: #F07818;
+  }
+  .message p{
+    font:18.2px "Roboto-Regular";
+    color: #F07818;
+  }
+  .message a{
+    border: #5D4B33 5px solid;
+    font: 800 21px "Roboto-Regular" ;
+    color: #5D4B33;
+  }
+}
+
+
+.header{
+  background-color:#f2f6f7;
+}
+
+.container::before{
+  display: table;
+  content: "";
+}
+
+
+.message a:hover{
+  border: #F07818 5px solid;
+  color: #F07818;
+}
+.message a:focus{
+  border: #F07818 5px solid;
+  color: #F07818;
+  box-shadow: 0 0 0 0.2rem rgba(240, 120, 24, 0.5);
+}
+
+.details>p{
+  font-size:14px;
+  font-weight: bolder;
+  /* font:bolder 14px; */
+  color: #000000;
+  margin:.6rem 0 .6rem 0 !important;
+}
+
+.details span:last-child{
+  float: right;
+  font: 14px;
+  color: #999999;
+  margin-right: 4.2rem;
+}
+
+img{
+  border:1px solid #eee;
+}
+

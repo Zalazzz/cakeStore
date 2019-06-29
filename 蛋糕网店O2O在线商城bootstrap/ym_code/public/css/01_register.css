@@ -1,0 +1,62 @@
+/* 注册 */
+.register{
+  margin-top:-100px;
+}
+.register-top-grid,.register-bottom-grid{
+  width:60%;
+  height: 25%;
+  margin: 0 auto;
+  margin-top: 5.5rem;
+}
+.register-top-grid h3,.register-bottom-grid h3{
+  padding-bottom:1rem;
+  font-size:3rem;
+  font-family:'Goudy Old Style';
+  color:#f07818;
+  text-align: center;
+}
+.register-top-grid p,.register-bottom-grid p{
+  margin-top:0.25rem;
+  margin-bottom: 0.25rem;
+  padding-bottom: 0.2rem;
+  font-size:0.85rem;
+  color:#999;
+}
+.register-top-grid input[type="text"],.register-bottom-grid input[type="password"]{
+  width:96%;
+  border:1px solid #555;
+  padding:0.5rem;
+}
+
+.register-top-grid input[type="text"]:hover,.register-bottom-grid input[type="password"]:hover{
+  border:1px solid #f07818;
+}
+.register-top-grid input[type="checkbox"]{
+  margin-top: 1rem;
+  width: 1rem;
+  height: 1rem;
+  color:#555;
+}
+
+.register-top-grid span{
+  margin-left: 0.25rem;
+  font-size: 0.85rem;
+  font-weight: bolder;
+}
+.register-bottom-grid .btn-light{
+  border:0.1rem solid #f07818;
+  margin-top: 0.5rem;
+  background-color: #f07818;
+  color:#fff;
+}
+.register-bottom-grid .btn-light:hover{
+  border:0.1rem solid #f07818;
+  background-color: #fff;
+  color:#f07818;
+  transition:1s ease; 
+}
+
+iframe{
+  width:100%;
+  height: 30%;
+}

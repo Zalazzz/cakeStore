@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Header</title>
+  <!-- 设置视口 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximun-scale=1.0,user-scalable=0">
+  <!-- 导入css文件 -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <!-- 导入js文件 -->
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <!-- 导入自定义样式 -->
+  <link rel="stylesheet" href="css/00_common.css">
+  <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+  <div class="header">
+      <div class="navbar navbar-expand-sm navbar-dark">
+        <!-- 1.最前面不折叠的菜单项 -->
+        <a href="#" class="navbar-brand">Yummy</a>
+        <!-- 2.在超小屏下出现的按钮 -->
+        <!-- 是折叠区的触发按钮 -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#content">
+          <!-- 按钮上的三条线 -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 3.折叠的导航 -->
+        <div id="content" class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" target="myheader" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Birthday</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Wedding</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Special Offers</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Store</a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="navbar-brand">
+          <span>1</span>
+        </a>
+        <a href="#" class="navbar-brand">
+            <span>2</span>
+          </a>
+          <a href="#" class="navbar-brand">
+              <span>3</span>
+            </a>
+      </div>
+  </div>
+</body>
+</html>
